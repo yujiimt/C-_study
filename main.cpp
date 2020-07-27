@@ -1,11 +1,10 @@
 int main()
 {
-    std::vector<int> v = {1};
+    std::vector<int> source = {1, 2, 3, 4, 5};
 
-    auto i = std::begin(v);
+    //要素数5のvector
+    std::vector<int> destination(5);
 
-    //参照する要素を値として扱う
-    std::cout << *i ;
-    //参照する要素に値を代入する
-    *i = 2;
+    std::copy(std::begin(source), std::end(souce), std::begin(destination));
+    
 }
